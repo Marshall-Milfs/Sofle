@@ -59,7 +59,7 @@
         Fast_Del: Fast_Del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(LEFT_ARROW)) &kp DEL>, <&macro_tap>;
+            bindings = <&kp LS(LC(LEFT_ARROW)) &kp BACKSPACE>, <&macro_tap>;
 
             label = "FAST_DEL";
         };
@@ -74,7 +74,7 @@
 &sl 5       &kp Q      &kp W      &kp E     &kp R      &kp T     &kp C_NEXT  &kp Y   &kp U     &kp I      &kp O    &kp P     &kp LEFT_BRACKET
 &none       &kp A      &kp S      &kp D     &kp F      &kp G     &none       &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
 &kp TAB     &kp Z      &kp X      &kp C     &kp V      &kp B     &none       &kp N   &kp M     &kp COMMA  &kp DOT  &none     &kp ENTER
-&kp C_MUTE  &kp LSHFT  &kp LCTRL  &kp LALT  &kp SPACE  &mo 1     &kp C_PP    &mo 3   &kp BSPC  &none      &none    &none
+&kp C_MUTE  &kp LSHFT  &kp LCTRL  &kp LALT  &kp SPACE  &mo 1     &kp C_PP    &mo 3   &kp BSPC  &mo 3      &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -107,11 +107,11 @@
 
         Numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &none   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans        &trans           &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME       &kp SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP    &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp INSERT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_DOWN  &kp KP_PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans        &trans           &kp KP_NUMBER_0  &trans
             >;
 
             label = "Numpad";
