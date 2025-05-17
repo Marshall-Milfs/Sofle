@@ -60,11 +60,11 @@
 
         Main {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp UP_ARROW     &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &none
-&none       &kp Q   &kp W   &kp E   &kp R   &kp T     &kp DOWN_ARROW   &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&none       &kp A   &kp S   &kp D   &kp F   &kp G     &kp LEFT_ARROW   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
-&none       &kp Z   &kp X   &kp C   &kp V   &kp B     &kp RIGHT_ARROW  &kp N   &kp M   &kp COMMA  &kp DOT  &none     &kp ENTER
-&kp C_MUTE  &none   &none   &none   &none   &mo 1     &kp ENTER        &none   &none   &none      &none    &none
+&kp ESC     &kp N1     &kp N2    &kp N3     &kp N4  &kp N5    &kp UP_ARROW     &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &none
+&none       &kp Q      &kp W     &kp E      &kp R   &kp T     &kp DOWN_ARROW   &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT   &kp A      &kp S     &kp D      &kp F   &kp G     &kp LEFT_ARROW   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
+&kp TAB     &kp Z      &kp X     &kp C      &kp V   &kp B     &kp RIGHT_ARROW  &kp N   &kp M   &kp COMMA  &kp DOT  &none     &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LALT  &kp SPACE  &none   &mo 1     &kp ENTER        &none   &none   &kp BSPC   &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -73,7 +73,7 @@
 
         Single_Left {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -85,10 +85,10 @@
 
         Single_Right {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -97,11 +97,11 @@
 
         Setting {
             bindings = <
-&trans      &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &trans      &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(0,100,50)   &rgb_ug RGB_COLOR_HSB(189,100,58)  &rgb_ug RGB_ON                     &rgb_ug RGB_OFF
-&trans      &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans      &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(28,100,59)  &rgb_ug RGB_COLOR_HSB(217,100,60)  &rgb_ug RGB_EFR                    &rgb_ug RGB_EFF
-&trans      &trans          &trans         &trans         &trans         &trans           &trans      &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(48,98,58)   &rgb_ug RGB_COLOR_HSB(279,100,59)  &rgb_ug RGB_TOG                    &trans
-&trans      &bt BT_CLR_ALL  &trans         &trans         &bt BT_PRV     &bt BT_NXT       &trans      &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(72,98,59)   &rgb_ug RGB_COLOR_HSB(306,100,57)  &trans                             &trans
-&sys_reset  &trans          &trans         &trans         &trans         &trans           &sys_reset  &trans           &trans           &trans                            &rgb_ug RGB_COLOR_HSB(149,100,60)  &rgb_ug RGB_COLOR_HSB(340,100,58)
+&none       &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &none       &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_COLOR_HSB(0,100,50)   &rgb_ug RGB_COLOR_HSB(189,100,58)  &rgb_ug RGB_EFF                    &rgb_ug RGB_EFR
+&none       &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none       &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(28,100,59)  &rgb_ug RGB_COLOR_HSB(217,100,60)  &rgb_ug RGB_SPI                    &rgb_ug RGB_SPD
+&none       &none           &none          &none          &none          &none            &none       &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(53,98,58)   &rgb_ug RGB_COLOR_HSB(279,100,59)  &none                              &none
+&none       &bt BT_CLR_ALL  &none          &none          &bt BT_PRV     &bt BT_NXT       &none       &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(82,98,59)   &rgb_ug RGB_COLOR_HSB(306,100,57)  &rgb_ug RGB_SPD                    &rgb_ug RGB_SPI
+&sys_reset  &none           &none          &none          &none          &none            &sys_reset  &none            &none            &none                             &rgb_ug RGB_COLOR_HSB(159,100,60)  &rgb_ug RGB_COLOR_HSB(340,100,58)
             >;
 
             label = "Setting";
