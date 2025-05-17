@@ -128,5 +128,17 @@
 
             label = "Setting";
         };
+
+        Solo_Left {
+            bindings = <
+&kp BSPC  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp Y   &kp U   &kp I   &kp O   &kp P     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp H   &kp J   &kp K   &kp L   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp B   &kp N   &kp M   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Solo_Left";
+        };
     };
 };
