@@ -331,4 +331,4 @@ combos:
   l: [Main]
 - p: [39, 0]
   k: {t: Main, h: toggle}
-  l: [Solo_Left]
+  l: [Setting]
