@@ -43,15 +43,15 @@
         Setting {
             bindings = <&to 4>;
             key-positions = <39 0>;
-            timeout-ms = <15>;
+            timeout-ms = <25>;
             layers = <0>;
         };
 
         Exit_setting {
             bindings = <&to 0>;
             key-positions = <39 0>;
-            timeout-ms = <15>;
-            layers = <3>;
+            timeout-ms = <25>;
+            layers = <4>;
         };
     };
 
