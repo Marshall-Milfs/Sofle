@@ -41,7 +41,7 @@
         compatible = "zmk,combos";
 
         Setting {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <39 0>;
             timeout-ms = <15>;
             layers = <0>;
