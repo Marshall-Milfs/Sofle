@@ -327,7 +327,7 @@ layers:
   - RGB COLOR HSB(340,100,58)
 combos:
 - p: [39, 0]
-  k: {t: Solo_Left, h: toggle}
+  k: {t: Setting, h: toggle}
   l: [Main]
 - p: [39, 0]
   k: {t: Main, h: toggle}
