@@ -462,3 +462,6 @@ combos:
 - p: [39, 0]
   k: {t: Main, h: toggle}
   l: [Setting]
+- p: [53, 2]
+  k: {t: 'Alt+$$mdi:apple-keyboard-shift$$', h: toggle}
+  l: [Main]
