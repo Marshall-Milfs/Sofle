@@ -56,8 +56,8 @@
 
         ChangeLang {
             bindings = <&kt LA(LSHFT)>;
-            key-positions = <53 2>;
-            timeout-ms = <75>;
+            key-positions = <54 3>;
+            timeout-ms = <150>;
             layers = <0>;
         };
     };
