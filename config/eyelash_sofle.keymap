@@ -53,6 +53,13 @@
             timeout-ms = <45>;
             layers = <4>;
         };
+
+        ChangeLang {
+            bindings = <&kt LA(LSHFT)>;
+            key-positions = <53 2>;
+            timeout-ms = <75>;
+            layers = <0>;
+        };
     };
 
     macros {
