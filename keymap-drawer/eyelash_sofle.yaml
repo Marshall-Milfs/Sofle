@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', h: F1}
   - H
   - J
   - K
