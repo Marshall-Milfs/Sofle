@@ -40,7 +40,6 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        hold-trigger-key-positions = <1>;
         quick-tap-ms = <90>;
         tapping-term-ms = <180>;
     };
