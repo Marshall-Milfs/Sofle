@@ -41,6 +41,8 @@
 
         #binding-cells = <2>;
         tapping-term-ms = <320>;
+        quick-tap-ms = <24>;
+        flavor = "tap-unless-interrupted";
     };
 
     HoldDel: HoldDel {
