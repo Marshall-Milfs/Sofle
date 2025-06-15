@@ -62,7 +62,7 @@ layers:
   - $$mdi:play-pause$$
   - Single_Right
   - Single_Right
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: '&Fast_Del'}
   - NumPad
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Single_Left:
